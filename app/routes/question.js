@@ -42,6 +42,14 @@ export default Ember.Route.extend({
       answer.set('likes', likes);
       answer.save();
       this.transitionTo('question');
+    },
+
+    downvote(answer) {
+      var likes = answer.get('likes');
+      likes--;
+      answer.set('likes', likes);
+      answer.save();
+      this.transitionTo('question');
     }
   }
 });
