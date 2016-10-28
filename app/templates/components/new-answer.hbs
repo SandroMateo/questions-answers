@@ -1,1 +1,10 @@
-{{yield}}
+<form {{action 'save' on='click'}}>
+  <div class="form-group">
+    <label for="content">Answer:</label>
+    {{input value=content type="text" required="required"}}
+  </div>
+  <div class="form-group">
+    <label for="author">Name:</label>
+    {{input value=author type="text" required="required"}}
+  </div>
+</form>
