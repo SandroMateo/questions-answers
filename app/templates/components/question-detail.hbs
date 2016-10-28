@@ -1,6 +1,7 @@
 <h4>{{question.content}}</h4>
 <p>Asked by: {{question.author}}</p>
 <p>{{question.notes}}</p>
+<button class="btn" {{action 'deleteQuestion' question}}>Delete</button>
 
 {{#each question.answers as |answer|}}
   {{answer-list answer=answer}}
