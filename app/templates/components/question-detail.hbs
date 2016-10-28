@@ -1,1 +1,6 @@
-{{yield}}
+<h4>{{question.content}}</h4>
+<p>Asked by: {{question.author}}</p>
+<p>{{question.notes}}</p>
+{{#each question.answers as |answer|}}
+  {{answer-list answer=answer}}
+{{/each}}
