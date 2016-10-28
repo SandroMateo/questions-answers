@@ -1,1 +1,15 @@
-{{yield}}
+<form>
+  <div class="form-group">
+    <label for="author">Name:</label>
+    {{input value=author type="text" placeholder=question.author}}
+  </div>
+  <div class="form-group">
+    <label for="content">Question:</label>
+    {{input value=content type="text" placeholder=question.content}}
+  </div>
+  <div class="form-group">
+    <label for="notes">Additional Notes:</label>
+    {{input value=notes type="text" placeholder=question.notes}}
+  </div>
+  <button class="btn" {{action 'editQuestion' question}}>Edit</button>
+</form>
