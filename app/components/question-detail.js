@@ -8,6 +8,10 @@ export default Ember.Component.extend({
 
     saveAnswer(params) {
       this.sendAction('saveAnswer', params);
+    },
+
+    upvote(answer) {
+      this.sendAction('upvote', answer);
     }
   }
 });

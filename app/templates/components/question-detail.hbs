@@ -4,5 +4,5 @@
 <button class="btn" {{action 'deleteQuestion' question}}>Delete</button>
 
 {{#each question.answers as |answer|}}
-  {{answer-list answer=answer}}
+  {{answer-list answer=answer upvote="upvote"}}
 {{/each}}
