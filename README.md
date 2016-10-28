@@ -1,7 +1,6 @@
 # Questions-answers
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a website where users can ask questions and be answered by anyone else who uses this site.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/SandroMateo/questions-answers` this repository
 * `cd questions-answers`
 * `npm install`
 * `bower install`
@@ -50,4 +49,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
