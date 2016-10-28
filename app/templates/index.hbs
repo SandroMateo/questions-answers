@@ -1,1 +1,5 @@
-{{outlet}}
+<h1>Questions and Answers</h1>
+
+{{#each model as |question|}}
+  {{question-list question=question}}
+{{/each}}
