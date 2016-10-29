@@ -1,4 +1,5 @@
 <h4>{{question.content}}</h4>
 <p>Asked by: {{question.author}}</p>
 <p>{{question.notes}}</p>
-<button class="btn" {{action 'deleteQuestion' question}}>Delete</button>
+<i class="fa fa-pencil" {{action 'showEditQuestion'}} aria-hidden="true"></i>
+<i class="fa fa-trash" {{action 'deleteQuestion' question}} aria-hidden="true"></i>
