@@ -1,7 +1,9 @@
 <h1>Questions and Answers</h1>
 
 {{#each model as |question|}}
-  {{question-list question=question}}
+  <div class="well">
+    {{question-list question=question}}
+  </div>
 {{/each}}
 
 <button class="btn" {{action 'showNewQuestion'}}>New Question</button>
