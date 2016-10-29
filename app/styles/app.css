@@ -2,12 +2,22 @@ body {
   margin-top: 5%;
 }
 
-h3 {
+h2 {
   text-align: center;
-  color: crimson;
+  color: cornsilk;
 }
 
 i:hover {
   cursor: pointer;
   color: crimson;
+}
+
+#ask {
+  background-color: white;
+  border: 2px solid black;
+}
+
+#ask:hover {
+  background-color: black;
+  color: cornsilk;
 }

@@ -1,4 +1,6 @@
-<h1>Questions and Answers</h1>
+<h1>Questions and Answers
+  <button id="ask" class="btn pull-right" {{action 'showNewQuestion'}}>Ask A Question!</button>
+</h1>
 
 {{#each model as |question|}}
   <div class="well">
@@ -6,5 +8,4 @@
   </div>
 {{/each}}
 
-<button class="btn" {{action 'showNewQuestion'}}>New Question</button>
 {{new-question save="saveQuestion"}}
