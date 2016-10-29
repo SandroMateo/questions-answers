@@ -21,11 +21,11 @@ export default Ember.Service.extend({
     }
   },
 
-  toggleUpdateQuestionForm() {
-    if(this.get('showUpdateQuestionForm')) {
-      this.set('showUpdateQuestionForm', false);
+  toggleNewAnswerForm() {
+    if(this.get('showNewAnswerForm')) {
+      this.set('showNewAnswerForm', false);
     } else {
-      this.set('showUpdateQuestionForm', true);
+      this.set('showNewAnswerForm', true);
     }
   }
 });
