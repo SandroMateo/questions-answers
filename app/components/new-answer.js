@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  showForm: Ember.inject.service('show-hide'),
   actions: {
     save() {
       var params = {
@@ -10,8 +11,13 @@ export default Ember.Component.extend({
         question: this.get('question')
       };
       this.sendAction('save', params);
+      this.get('showForm').toggleNewAnswerForm();
       this.set('content', '');
       this.set('author', '');
-    }
+    },
+
+    showAnswerForm() {
+      this.get('showForm').toggleNewAnswerForm();
+    },
   }
 });

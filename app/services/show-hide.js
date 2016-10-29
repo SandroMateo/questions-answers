@@ -27,5 +27,6 @@ export default Ember.Service.extend({
     } else {
       this.set('showNewAnswerForm', true);
     }
+    console.log(this.get('showNewAnswerForm'));
   }
 });

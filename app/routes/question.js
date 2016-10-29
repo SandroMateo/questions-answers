@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  showForm: Ember.inject.service('show-hide'),
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
