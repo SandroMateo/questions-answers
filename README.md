@@ -28,7 +28,7 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 * `ember install emberfire`
-* `ember install bootstrap-ember`
+* `ember install ember-bootstrap`
 
 ## Running / Development
 
