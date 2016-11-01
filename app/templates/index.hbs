@@ -1,11 +1,13 @@
-<h1>Questions and Answers
-  <button id="ask" class="btn pull-right" {{action 'showNewQuestion'}}>Ask A Question!</button>
-</h1>
-
-{{#each model as |question|}}
-  <div class="well">
-    {{question-list question=question}}
+<h1>Questions and Answers <button id="ask" class="btn pull-right" {{action 'showNewQuestion'}}>Ask A Question!</button></h1>
+<div class="row">
+  <div class="col-md-8">
+    {{#each model as |question|}}
+      <div class="well">
+        {{question-list question=question}}
+      </div>
+    {{/each}}
   </div>
-{{/each}}
-
-{{new-question save="saveQuestion"}}
+  <div class="col-md-4">
+    {{new-question save="saveQuestion"}}
+  </div>
+</div>

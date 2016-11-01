@@ -51,6 +51,10 @@ export default Ember.Route.extend({
       answer.set('likes', likes);
       answer.save();
       this.transitionTo('question');
+    },
+
+    destroyAnswer(answer) {
+      answer.destroyRecord();
     }
   }
 });

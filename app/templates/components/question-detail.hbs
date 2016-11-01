@@ -1,5 +1,5 @@
 <h2>{{question.content}}</h2>
-<p>Asked by: {{question.author}}</p>
-<p>{{question.notes}}</p>
+<p><strong>Asked by:</strong> {{question.author}}</p>
+<p><strong>Notes:</strong> {{question.notes}}</p>
 <i class="fa fa-pencil" {{action 'showEditQuestion'}} aria-hidden="true"></i>
 <i class="fa fa-trash" {{action 'deleteQuestion' question}} aria-hidden="true"></i>

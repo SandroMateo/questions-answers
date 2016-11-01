@@ -1,5 +1,7 @@
 # Questions-answers
 
+### By Sandro Alvarez
+
 This is a website where users can ask questions and be answered by anyone else who uses this site.
 
 ## Prerequisites

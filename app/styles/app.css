@@ -2,7 +2,12 @@ body {
   margin-top: 5%;
 }
 
-h2 {
+.btn {
+  background-color: white;
+  border: 2px solid black;
+}
+
+.navbar h2 {
   text-align: center;
   color: cornsilk;
 }
@@ -13,8 +18,11 @@ i:hover {
 }
 
 #ask {
+  display: block;
+  margin-right: 7%;
   background-color: white;
   border: 2px solid black;
+  font-size: 65%;
 }
 
 #ask:hover {
