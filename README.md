@@ -4,6 +4,13 @@
 
 This is a website where users can ask questions and be answered by anyone else who uses this site.
 
+## Specifications
+
+Input Behavior | Input | Output |
+---------------|-------|--------|
+creates a question object and displays on the page| Name: Sandro, Question: "How do you make this?", Additional Notes: "I don't know how to do this." | Name: Sandro, Question: "How do you make this?", Additional Notes: "I don't know how to do this."|
+creates an answer object and displays on the page| Name: Gabe, Answer: "You put this there and that right here?" | Name: Gabe, Answer: "You put this there and that right here?"|
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -20,6 +27,8 @@ You will need the following things properly installed on your computer.
 * `cd questions-answers`
 * `npm install`
 * `bower install`
+* `ember install emberfire`
+* `ember install bootstrap-ember`
 
 ## Running / Development
 
@@ -39,10 +48,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
