@@ -6,7 +6,7 @@ export function needsAnswers(params/*, hash*/) {
   if(answers > 0) {
     return question._internalModel._data.content
   } else {
-    return question._internalModel._data.content + " NEEDS ANSWERS!"
+    return "⭐⭐⭐ " + question._internalModel._data.content
   }
 }
 
