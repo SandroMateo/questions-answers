@@ -1,7 +1,7 @@
 <h4>{{answer.content}}</h4>
 <p><em>{{answer.timestamp}}</em></p>
-<p>Answered by: {{answer.author}}</p>
-<p>Likes: {{answer.likes}}
+<p><strong>Answered by:</strong> {{answer.author}}</p>
+<p><strong>Likes:</strong> {{answer.likes}}
   <i class="fa fa-thumbs-up" {{action 'upvote' answer}} aria-hidden="true"></i>
   <i class="fa fa-thumbs-down" {{action 'downvote' answer}} aria-hidden="true"></i>
 </p>
