@@ -18,8 +18,5 @@ export default Ember.Component.extend({
       this.set('author', '');
     },
 
-    showAnswerForm() {
-      this.get('showForm').toggleNewAnswerForm();
-    },
   }
 });

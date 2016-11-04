@@ -5,4 +5,15 @@
 <p><strong>Answers:</strong> {{answerAmount}}</p>
 <i class="fa fa-pencil" {{action 'showEditQuestion'}} aria-hidden="true"></i>
 <i class="fa fa-trash" {{action 'deleteQuestion' question}} aria-hidden="true"></i>
-{{log answerAmount}}
+<button class="btn pull-right" {{action 'showAnswerForm'}}>Answer</button>
+<hr>
+{{#if question.answers}}
+<h4>Answers: </h4>
+{{else}}
+  <p>No answers yet.</p>
+{{/if}}
+{{#each question.answers as |answer|}}
+  <div class="well">
+    {{answer-list answer=answer upvote="upvote" downvote="downvote" deleteAnswer="destroyAnswer"}}
+  </div>
+{{/each}}

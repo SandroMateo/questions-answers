@@ -1,15 +1,4 @@
 {{question-detail question=model deleteQuestion="destroyQuestion" saveAnswer="saveAnswer" upvote="upvote" downvote="downvote"}}
-<hr>
-{{#if model.answers}}
-<h4>Answers: </h4>
-{{else}}
-  <p>No answers yet.</p>
-{{/if}}
-{{#each model.answers as |answer|}}
-  <div class="well">
-    {{answer-list answer=answer upvote="upvote" downvote="downvote" deleteAnswer="destroyAnswer"}}
-  </div>
-{{/each}}
 <br>
 {{new-answer question=model save="saveAnswer"}}
 <br>

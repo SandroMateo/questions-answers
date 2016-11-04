@@ -24,6 +24,10 @@ export default Ember.Component.extend({
 
     showEditQuestion() {
       this.get('showForm').toggleUpdateQuestionForm();
-    }
+    },
+
+    showAnswerForm() {
+      this.get('showForm').toggleNewAnswerForm();
+    },
   }
 });
