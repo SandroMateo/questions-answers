@@ -12,7 +12,7 @@
 {{else}}
   <p>No answers yet.</p>
 {{/if}}
-{{#each question.answers as |answer|}}
+{{#each sortedAnswers as |answer|}}
   <div class="well">
     {{answer-list answer=answer upvote="upvote" downvote="downvote" deleteAnswer="destroyAnswer"}}
   </div>
