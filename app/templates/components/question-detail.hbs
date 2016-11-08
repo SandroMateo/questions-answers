@@ -3,9 +3,11 @@
 <p><strong>Asked by:</strong> {{question.author}}</p>
 <p><strong>Notes:</strong> {{question.notes}}</p>
 <p><strong>Answers:</strong> {{answerAmount}}</p>
-<i class="fa fa-pencil" {{action 'showEditQuestion'}} aria-hidden="true"></i>
-<i class="fa fa-trash" {{action 'deleteQuestion' question}} aria-hidden="true"></i>
-<button class="btn pull-right" {{action 'showAnswerForm'}}>Answer</button>
+{{#if loggedIn.signedIn}}
+  <i class="fa fa-pencil" {{action 'showEditQuestion'}} aria-hidden="true"></i>
+  <i class="fa fa-trash" {{action 'deleteQuestion' question}} aria-hidden="true"></i>
+  <button class="btn pull-right" {{action 'showAnswerForm'}}>Answer</button>
+{{/if}}
 <hr>
 {{#if question.answers}}
 <h4>Answers: </h4>

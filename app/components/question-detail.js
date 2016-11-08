@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  loggedIn: Ember.inject.service('logged-in'),
   showForm: Ember.inject.service('show-hide'),
   sortBy: ['likes:desc'],
   answerAmount: Ember.computed('question.answers', function() {

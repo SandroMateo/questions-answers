@@ -2,7 +2,11 @@
 <p><em>{{answer.timestamp}}</em></p>
 <p><strong>Answered by:</strong> {{answer.author}}</p>
 <p><strong>Likes:</strong> {{answer.likes}}
-  <i class="fa fa-thumbs-up" {{action 'upvote' answer}} aria-hidden="true"></i>
-  <i class="fa fa-thumbs-down" {{action 'downvote' answer}} aria-hidden="true"></i>
+  {{#if loggedIn.signedIn}}
+    <i class="fa fa-thumbs-up" {{action 'upvote' answer}} aria-hidden="true"></i>
+    <i class="fa fa-thumbs-down" {{action 'downvote' answer}} aria-hidden="true"></i>
+  {{/if}}
 </p>
-<i class="fa fa-trash pull-right" {{action 'deleteAnswer' answer}} aria-hidden="true"></i>
+{{#if loggedIn.signedIn}}
+  <i class="fa fa-trash pull-right" {{action 'deleteAnswer' answer}} aria-hidden="true"></i>
+{{/if}}
