@@ -1,5 +1,5 @@
 {{#if loggedIn.signedIn}}
-  <button type="button" class="button" {{action 'signOut'}}>Logout</button>
+  <button type="button" class="btn" {{action 'signOut'}}>Logout</button>
 {{else}}
   <form {{action 'signIn' on='submit'}}>
     <div class="form-group">

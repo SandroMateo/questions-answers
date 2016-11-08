@@ -1,5 +1,5 @@
 body {
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 .btn {
@@ -22,7 +22,8 @@ i:hover {
   margin-right: 7%;
   background-color: white;
   border: 2px solid black;
-  font-size: 65%;
+  font-size: 150%;
+  font-weight: bold;
 }
 
 #ask:hover {
