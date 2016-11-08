@@ -1,7 +1,7 @@
 {{#if loggedIn.signedIn}}
   <button type="button" class="button" {{action 'signOut'}}>Logout</button>
 {{else}}
-  <form {{action 'signIn' on='click'}}>
+  <form {{action 'signIn' on='submit'}}>
     <div class="form-group">
       <label for="name">Name:</label>
       {{input value=name required="required" class="form-control"}}

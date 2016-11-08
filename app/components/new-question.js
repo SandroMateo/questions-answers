@@ -3,6 +3,7 @@ import moment from 'moment';
 
 export default Ember.Component.extend({
   showForm: Ember.inject.service('show-hide'),
+  loggedIn: Ember.inject.service('logged-in'),
   actions: {
     save() {
       var params = {
@@ -17,6 +18,10 @@ export default Ember.Component.extend({
       this.set('author', '');
       this.set('content', '');
       this.set('notes', '');
+    },
+
+    showNewQuestion() {
+      this.get('showForm').toggleNewQuestionForm();
     }
   }
 });

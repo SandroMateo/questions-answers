@@ -7,7 +7,7 @@ export default Ember.Service.extend({
   login(name) {
     this.set('signedIn', true);
     this.set('name', name);
-  }
+  },
 
   logout() {
     this.set('signedIn', false);
