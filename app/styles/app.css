@@ -30,3 +30,7 @@ i:hover {
   background-color: black;
   color: cornsilk;
 }
+
+#loginCall {
+  color: orangered;
+}

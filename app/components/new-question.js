@@ -12,7 +12,6 @@ export default Ember.Component.extend({
         notes: this.get('notes'),
         timeout: moment().format('LL')
       };
-      console.log(params);
       this.sendAction('save', params);
       this.get('showForm').toggleNewQuestionForm();
       this.set('author', '');
