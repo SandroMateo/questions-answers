@@ -33,5 +33,9 @@ export default Ember.Component.extend({
     showAnswerForm() {
       this.get('showForm').toggleNewAnswerForm();
     },
+
+    destroyAnswer(params) {
+      this.sendAction('destroyAnswer', params);
+    }
   }
 });
