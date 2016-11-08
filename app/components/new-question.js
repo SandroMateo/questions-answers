@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   actions: {
     save() {
       var params = {
-        author: this.get('author'),
+        author: this.get('loggedIn').name,
         content: this.get('content'),
         notes: this.get('notes'),
         timeout: moment().format('LL')
